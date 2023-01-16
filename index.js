@@ -1,1 +1,1 @@
-export {default as Server} from './src/server.js';
+export {Server as HttpServer} from './src/server.js';

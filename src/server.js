@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 
-export default class Server {
+class Server {
     /**
      * @param {number} port
      */
@@ -33,3 +33,5 @@ export default class Server {
         this._server.listen(this._port);
     }
 }
+
+export {Server}
