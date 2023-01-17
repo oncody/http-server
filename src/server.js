@@ -26,7 +26,7 @@ class Server {
     registerGet(url, urlParameter, dataFetchFunction) {
         this._server.get(url, async (request, response) => {
             let urlValue = request.params[urlParameter];
-            let cacheKey = `/historical-data/${urlValue}`;
+            let cacheKey = `${url}/${urlValue}`;
             let data = await this._layeredDataAccess.asyncGet(cacheKey, async () => await dataFetchFunction(urlValue));
             response.json({data: data});
         });
