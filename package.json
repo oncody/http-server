@@ -1,6 +1,6 @@
 {
-  "name": "@oncody/http-server",
-  "version": "1.0.1",
+  "name": "@oncody/server",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "type": "module",
@@ -20,6 +20,7 @@
   "homepage": "https://github.com/oncody/http-server#readme",
   "dependencies": {
     "cors": "2.8.5",
-    "express": "4.18.2"
+    "express": "4.18.2",
+    "lru-cache": "7.14.1"
   }
 }

@@ -19,11 +19,11 @@ class Server {
 
     /**
      * Register a get route
-     * @param {string} route
+     * @param {string} url
      * @param {Function} func. This takes in request and response
      */
-    registerGetRoute(route, func) {
-        this._server.get(route, func);
+    registerGetRoute(url, func) {
+        this._server.get(url, func);
     }
 
     /**
